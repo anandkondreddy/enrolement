@@ -118,7 +118,7 @@ const OpportunitiesAndRegistration: React.FC = () => {
                   <span className="font-semibold text-blue-900">Early Bird (Until Sept 9, 2025):</span> ₹1000
                 </li> */}
                 <li>
-                  <span className="font-semibold text-blue-900">Regular (Until Sept 18, 2025):</span> ₹1,000
+                  <span className="font-semibold text-blue-900">Regular (Until Oct 11, 2025):</span> ₹1,000
                 </li>
                 <li>
                   <span className="font-semibold text-blue-900">Late/Onsite:</span> ₹1,500
