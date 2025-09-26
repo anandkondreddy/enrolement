@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-4 leading-tight">
-            Two Traditions, One Science :<span className="block text-yellow-400">The PSA Paradigm</span>
+            Two Traditions, One Science :<span className="block text-yellow-400">From PSA to PRISM: The New Paradigm</span>
           </h1> 
             
             <p className="text-xl md:text-2xl text-gray-200 mb-3  max-w-4xl mx-auto">Training in Polyscientific Advanced Integrative Medicine (PSA Medicine)</p><br />
@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="flex flex-wrap justify-center gap-6 mb-12 text-white">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Calendar className="w-5 h-5 text-yellow-400" />
-              <span className="font-medium">Coming this September</span>
+              <span className="font-medium">Coming this October</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Users className="w-5 h-5 text-yellow-400" />

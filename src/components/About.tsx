@@ -40,8 +40,8 @@ const gains: Gain[] = [
   const features = [
     {
       icon: <GraduationCap className="w-8 h-8" />,
-      title: "PSA Course Launch",
-      description: "Be the first to witness India’s structured training pathways in Poly Scientific Advanced Integrative Medicine."
+      title: "PRISM Course Launch",
+      description: "Be the first to witness India’s structured training pathways in 'Poly Scientific Regenerative Intigrative Systems Medicine'."
     },
     {
       icon: <Users2 className="w-8 h-8" />,
