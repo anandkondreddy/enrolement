@@ -17,7 +17,7 @@ const highlights = [
 //   },
   {
     icon: <Users className="w-10 h-10 text-blue-900" />,
-    title: "PSA Training Pathways",
+    title: "PRISM Training Pathways",
     description:
       "Specialized tracks for Freshers, Practitioners, and Entrepreneurs with tailored content to meet the needs of each group. Launch of comprehensive curriculum and certification programs.",
   },
@@ -25,13 +25,13 @@ const highlights = [
     icon: <ScrollText className="w-10 h-10 text-blue-900" />,
     title: "Policy Roundtable",
     description:
-      "Explore legal and regulatory frameworks in integrative medicine with key stakeholders. Discussions on standardization, licensing, and practice guidelines for PSA Medicine practitioners.",
+      "Explore legal and regulatory frameworks in integrative medicine with key stakeholders. Discussions on standardization, licensing, and practice guidelines for PRISM Medicine practitioners.",
   },
   {
     icon: <Laptop className="w-10 h-10 text-blue-900" />,
     title: "Live Demonstrations",
     description:
-      "Hands-on experiences with PSA Metrics, Digital Health tools, and Clinical Applications. Watch experts demonstrate integrative approaches to common and complex conditions.",
+      "Hands-on experiences with PRISM Metrics, Digital Health tools, and Clinical Applications. Watch experts demonstrate integrative approaches to common and complex conditions.",
   },
   {
     icon: <Briefcase className="w-10 h-10 text-blue-900" />,

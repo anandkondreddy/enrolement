@@ -70,7 +70,7 @@ const gains: Gain[] = [
           <p className="text-xl text-gray-700 max-w-6xl mx-auto leading-relaxed">
           <span className="font-semibold text-blue-900">Healthcare</span> is changing fast — and 
           India is leading the way.  
-          The <span className="font-bold text-blue-900">National Conference on Poly Scientific Advanced Integrative Medicine (IPSA 2025) </span> 
+          The <span className="font-bold text-blue-900">National Conference on Poly Scientific Regenerative Intigrative Systems Medicine (PRISM 2025) </span> 
            isn’t just another CME, it’s a movement where 
           <span className="font-semibold text-blue-900"> tradition meets technology</span> and ideas turn into action.  
 
@@ -128,7 +128,7 @@ const gains: Gain[] = [
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                 <span>
-                  Witness the <span className="font-semibold text-yellow-500">launch of World’s first Institute of Poly Scientific Advanced Integrative Medicine</span> — integrating Ayurveda, Allopathy, Naturopathy, Nutrition & Digital Health into one curriculum.
+                  Witness the <span className="font-semibold text-yellow-500">launch of World’s first Institute of Poly Scientific Regenerative Intigrative Systems Medicine</span> — integrating Ayurveda, Allopathy, Naturopathy, Nutrition & Digital Health into one curriculum.
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -149,7 +149,7 @@ const gains: Gain[] = [
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                 <span>
-                  Explore <span className="font-semibold text-blue-900">PSA Franchise Models</span> and opportunities to build scalable ventures in integrative medicine.
+                  Explore <span className="font-semibold text-blue-900">PRISM Franchise Models</span> and opportunities to build scalable ventures in integrative medicine.
                 </span>
               </li>
               <li className="flex items-start gap-3">

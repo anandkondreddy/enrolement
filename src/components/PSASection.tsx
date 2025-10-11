@@ -33,7 +33,7 @@ const PSASection: React.FC = () => {
         {/* PSA Medicine Approach */}
         <div>
           <h2 className="text-3xl font-bold text-blue-900 mb-10 text-center">
-            The PSA Medicine Approach
+            The PRISM Medicine Approach
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -43,24 +43,22 @@ const PSASection: React.FC = () => {
                 src={PSA}
                 alt="PSA Medicine Approach"
                 className="w-[90%] md:w-full md:h-[550px] object-contain mx-auto"
-
               />
             </div>
-
             {/* Right Content */}
             <div>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Poly Scientific Advanced (PSA) Medicine represents a paradigm shift in healthcare delivery. Rather than viewing different medical traditions as competing systems, PSA creates a scientific framework where multiple approaches complement each other.
+                Poly Scientific Regenerative Intigrative Systems Medicine represents a paradigm shift in healthcare delivery. Rather than viewing different medical traditions as competing systems, PRISM creates a scientific framework where multiple approaches complement each other.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                At its core, PSA Medicine recognizes that{" "}
+                At its core, PRISM Medicine recognizes that{" "}
                 <span className="text-yellow-600 font-semibold">
                   each medical tradition has unique strengths and limitations.
                 </span>{" "}
                 By integrating these approaches through standardized metrics and protocols, practitioners can deliver more comprehensive care that addresses both acute conditions and chronic imbalances.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                This conference will unveil the structured methodology behind PSA Medicine, including:
+                This conference will unveil the structured methodology behind PRISM Medicine, including:
               </p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
                 <li>
@@ -82,7 +80,7 @@ const PSASection: React.FC = () => {
         {/* Why PSA Matters for India */}
         <div>
           <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">
-            Why PSA Medicine Matters for India
+            Why PRISM Medicine Matters for India
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-12 text-center">
             India faces unique healthcare challenges that require innovative solutions. With a rising burden of chronic diseases alongside unresolved infectious conditions, the limitations of single-system approaches have become increasingly apparent.
@@ -109,7 +107,7 @@ const PSASection: React.FC = () => {
           </div>
 
           <p className="text-gray-700 text-lg leading-relaxed mb-8 text-center">
-            PSA Medicine addresses these challenges by creating structured pathways for integration that preserve the integrity of each tradition while enhancing overall effectiveness. The approach aligns with national health policy priorities, including the National AYUSH Mission and Digital Health Mission.
+            PRISM Medicine addresses these challenges by creating structured pathways for integration that preserve the integrity of each tradition while enhancing overall effectiveness. The approach aligns with national health policy priorities, including the National AYUSH Mission and Digital Health Mission.
           </p>
 
           {/* Highlighted Box */}
@@ -117,7 +115,7 @@ const PSASection: React.FC = () => {
             <div className="flex items-center gap-2 mb-4">
               <Info className="w-6 h-6 text-yellow-400" />
               <h3 className="text-lg font-semibold">
-                PSA Medicine supports key national priorities:
+                PRISM Medicine supports key national priorities:
               </h3>
             </div>
             <ul className="list-disc pl-6 space-y-2 text-gray-100">

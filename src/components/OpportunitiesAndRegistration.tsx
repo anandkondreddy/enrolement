@@ -28,7 +28,7 @@ const OpportunitiesAndRegistration: React.FC = () => {
                 <li className="flex gap-3">
                   <span className="mt-2 h-2 w-2 rounded-full bg-yellow-400 flex-shrink-0" />
                   <span>
-                    <span className="font-semibold text-blue-900">Turnkey clinic setup</span> with standardized PSA Medicine protocols
+                    <span className="font-semibold text-blue-900">Turnkey clinic setup</span> with standardized PRISM Medicine protocols
                   </span>
                 </li>
                 <li className="flex gap-3">
@@ -118,7 +118,7 @@ const OpportunitiesAndRegistration: React.FC = () => {
                   <span className="font-semibold text-blue-900">Early Bird (Until Sept 9, 2025):</span> ₹1000
                 </li> */}
                 <li>
-                  <span className="font-semibold text-blue-900">Regular (Until Oct 11, 2025):</span> ₹1,000
+                  <span className="font-semibold text-blue-900">Regular (Until Oct 26, 2025):</span> ₹1,000
                 </li>
                 <li>
                   <span className="font-semibold text-blue-900">Late/Onsite:</span> ₹1,500

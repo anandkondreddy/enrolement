@@ -15,7 +15,7 @@ export default function Agenda() {
     {
       time: "10:15 AM – 11:30 AM",
       title: "Plenary: The Science of Integration",
-      description: "Foundational principles and evidence base for PSA Medicine",
+      description: "Foundational principles and evidence base for PRISM Medicine",
       icon: <Mic className="w-6 h-6 text-blue-900" />,
       type: "panel",
     },
@@ -29,7 +29,7 @@ export default function Agenda() {
     {
       time: "2:00 PM – 3:30 PM",
       title: "Live Demonstrations",
-      description: "PSA Metrics, pulse diagnosis integration with biomarkers, digital health tools",
+      description: "PRISM Metrics, pulse diagnosis integration with biomarkers, digital health tools",
       icon: <Activity className="w-6 h-6 text-blue-900" />,
       type: "panel",
     },

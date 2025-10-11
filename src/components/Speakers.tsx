@@ -10,7 +10,7 @@ export default function Speakers() {
       organization: "Founder and CEO, Sai Ganga Panakeia Ltd",
       image: speaker, // replace with your uploaded logo/path
       credentials:
-        "Pioneer in developing the PSA Medicine framework and founder of multiple successful integrative healthcare ventures. Dr. Polisetty brings over 32 years of experience bridging traditional and modern medical approaches."
+        "Pioneer in developing the PRISM Medicine framework and founder of multiple successful integrative healthcare ventures. Dr. Polisetty brings over 32 years of experience bridging traditional and modern medical approaches."
     },
     // {
     //   name: "Dr. Sridhar Akepalli",
