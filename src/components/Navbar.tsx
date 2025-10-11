@@ -36,13 +36,14 @@ export default function Navbar({ isScrolled }: NavbarProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center  flex-shrink-0 ">
-          <img
-            src={logo}   // replace with your logo path
-            alt="IPSA Logo"
-            className="h-12 w-auto object-contain"  // adjust size as needed
-          />
+  <div className="flex justify-between items-center h-20">
+    <div className="flex items-center flex-shrink-0">
+      <img
+        src={logo}   // replace with your logo path
+        alt="PRISM Logo"
+         className="max-h-26 w-auto object-contain" // 👈 keeps it balanced
+        style={{ maxWidth: "180px" }}   // ✅ adjusted size
+      />
           
         </div>
 
