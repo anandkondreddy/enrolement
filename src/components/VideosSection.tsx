@@ -47,7 +47,7 @@ export default function VideosSection() {
         {/* Brochures Section */}
         <div className="text-center">
           <h3 className="text-2xl font-semibold mb-6 text-blue-800">
-            Download Course Brochures
+            Download Course Brochure
           </h3>
           <div className="flex justify-center gap-6">
             {/* Brochure 1 */}
@@ -60,13 +60,13 @@ export default function VideosSection() {
             </a>
 
             {/* Brochure 2 */}
-            <a
+            {/* <a
               href={courcebroucher2} // Or use {brochure2} if imported
               download
               className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition duration-300"
             >
               Certification Course Brochure 
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
