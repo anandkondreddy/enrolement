@@ -1,6 +1,6 @@
 import React from "react";
 import { Info } from "lucide-react";
-import PSA from "../assets/PSA.png";
+import PSA from "../assets/PSA.jpeg";
 
 const PSASection: React.FC = () => {
   const stats = [
