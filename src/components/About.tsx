@@ -17,6 +17,16 @@ const gains: Gain[] = [
   // },
   {
     icon: <Microscope className="w-8 h-8" />,
+    title: "Regenerative Medicine",
+    description: "Learn advanced cell-based therapies and tissue regeneration techniques for clinical applications."
+  },
+  {
+    icon: <Microscope className="w-8 h-8" />,
+    title: "Ai & Ml Framework for PRISM",
+    description: "Explore the application of Artificial Intelligence in precision and predictive medicine."
+  },
+  {
+    icon: <Microscope className="w-8 h-8" />,
     title: "Integrative Medicine",
     description: "Cutting-edge integrative medicine training."
   },
@@ -70,7 +80,7 @@ const gains: Gain[] = [
           <p className="text-xl text-gray-700 max-w-6xl mx-auto leading-relaxed">
           <span className="font-semibold text-blue-900">Healthcare</span> is changing fast — and 
           India is leading the way.  
-          The <span className="font-bold text-blue-900">National Conference on Poly Scientific Regenerative Intigrative Systems Medicine (PRISM 2025) </span> 
+          The <span className="font-bold text-blue-900">National Conference on Poly Scientific Regenerative Integrative Systems Medicine (PRISM 2025) </span> 
            isn’t just another CME, it’s a movement where 
           <span className="font-semibold text-blue-900"> tradition meets technology</span> and ideas turn into action.  
 
@@ -118,9 +128,9 @@ const gains: Gain[] = [
         </div>
 
         {/* Three Columns with Dividers */}
-        <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200 gap-12">
+        <div className="grid md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-200 gap-12">
           {/* Column 1 - Students & Doctors */}
-          <div className="pr-6">
+          <div className="pr-1">
             <h3 className="text-2xl font-bold text-blue-900 mb-6">
               For <span className="text-yellow-400">Students & Doctors</span>
             </h3>
@@ -134,14 +144,14 @@ const gains: Gain[] = [
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                 <span>
-                  Designed for <span className="font-semibold text-blue-900">BAMS, MBBS, BNYS, BHMS, MBBS, PharmD students</span> who want to upskill and <span className="font-semibold text-yellow-500">experienced doctors</span> who aspire to teach and lead in integrative healthcare.
+                  Designed for <span className="font-semibold text-blue-900">BAMS, MBBS, BNYS, BHMS, PharmD students</span> who want to upskill and <span className="font-semibold text-yellow-500">experienced doctors</span> who aspire to teach and lead in integrative healthcare.
                 </span>
               </li>
             </ul>
           </div>
 
           {/* Column 2 - Healthcare Entrepreneurs */}
-          <div className="px-6">
+          <div className="px-3">
             <h3 className="text-2xl font-bold text-blue-900 mb-6">
               For <span className="text-yellow-400">Healthcare Entrepreneurs</span>
             </h3>
@@ -162,7 +172,7 @@ const gains: Gain[] = [
           </div>
 
           {/* Column 3 - Researchers & Practitioners */}
-          <div className="pl-6">
+          <div className="pl-3">
             <h3 className="text-2xl font-bold text-blue-900 mb-6">
               For <span className="text-yellow-400">Researchers & Practitioners</span>
             </h3>
@@ -181,6 +191,26 @@ const gains: Gain[] = [
               </li>
             </ul>
           </div>
+          {/* Column 4 - Ai & Ml Technocrats */}
+          <div className="px-3">
+            <h3 className="text-2xl font-bold text-blue-900 mb-6">
+              For <span className="text-yellow-400">Ai & Ml Technocrats</span>
+            </h3>
+            <ul className="space-y-4 text-lg text-gray-700">
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                <span>
+                  A New Era of  <span className="font-semibold text-blue-900">Preventive and Personalized Healthcare Through Technology</span> .
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+                <span>
+                  Witness how our <span className="font-semibold text-yellow-500">AI-powered Ayurvedic</span> analysis transforms traditional diagnosis into modern, data-driven health insights.
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       {/* What You'll Gain Section */}
@@ -188,7 +218,7 @@ const gains: Gain[] = [
   <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-12">
     What <span className="text-yellow-400">You’ll Gain</span>
   </h2>
-  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
     {gains.map((gain, index) => (
       <div
         key={index}

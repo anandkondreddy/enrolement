@@ -82,7 +82,7 @@ export default function Speakers() {
           </p>
           <ul className="mt-4 text-gray-600 space-y-2">
             <li>• All India Institute of Ayurveda</li>
-            <li>• IIT Hyderabad</li>
+            {/* <li>• IIT Hyderabad</li> */}
             <li>• Ministry of AYUSH</li>
             <li>• Leading medical institutions</li>
           </ul>

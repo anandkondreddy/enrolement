@@ -62,7 +62,7 @@ const PSASection: React.FC = () => {
               </p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
                 <li>
-                  Standardized assessment protocols that incorporate both traditional diagnostics (pulse, tongue, dosha analysis) and modern biomarkers.
+                  Standardized assessment protocols that incorporate both traditional diagnostics through careful and intense scientific experimentation.
                 </li>
                 <li>
                   Treatment algorithms that sequence interventions from multiple traditions.
@@ -80,7 +80,7 @@ const PSASection: React.FC = () => {
         {/* Why PSA Matters for India */}
         <div>
           <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">
-            Why PRISM Medicine Matters for India
+            Why PRISM Medicine Matters for World
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-12 text-center">
             India faces unique healthcare challenges that require innovative solutions. With a rising burden of chronic diseases alongside unresolved infectious conditions, the limitations of single-system approaches have become increasingly apparent.
