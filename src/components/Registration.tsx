@@ -304,6 +304,8 @@ const handleMemberChange = (
                   <option value="visitor">Visitor</option>
                   <option value="practitioner">Practitioner</option>
                   <option value="Organizer">Organizer</option>
+                  <option value="delegates">Delegates</option>
+                  
                 </select>
               </div>
             ))}
@@ -361,6 +363,7 @@ const handleMemberChange = (
               <option value="visitor">Visitor</option>
               <option value="practitioner">Practitioner</option>
               <option value="Organizer">Organizer </option>
+               <option value="delegates">Delegates</option>
             </select>
 
             {formData.type === "student" && (

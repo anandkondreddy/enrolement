@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Users2, Microscope, Briefcase } from 'lucide-react';
+import { GraduationCap, Users2, Microscope, Briefcase, Brain } from 'lucide-react';
 
 export default function About() {
   interface Gain {
@@ -21,8 +21,8 @@ const gains: Gain[] = [
     description: "Learn advanced cell-based therapies and tissue regeneration techniques for clinical applications."
   },
   {
-    icon: <Microscope className="w-8 h-8" />,
-    title: "Ai & Ml Framework for PRISM",
+    icon: <Brain className="w-8 h-8" />,
+    title: "AI & ML Framework for PRISM",
     description: "Explore the application of Artificial Intelligence in precision and predictive medicine."
   },
   {
