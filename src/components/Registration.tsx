@@ -93,69 +93,62 @@ const handleMemberChange = (
   const startPayment = async (e: React.FormEvent) => {
   e.preventDefault();
   setLoading(true);
+
   try {
-    const body: any = {
+    const FIXED_LOCATION = "T-HUB";
+    const FIXED_CONFERENCE_DATE = "2025-09-21";
+
+    let body: any = {
       coupon: formData.coupon || null,
     };
 
     if (isGroup) {
+      // Map group_members correctly for backend
       body.group_members = groupMembers.map((m) => ({
         name: m.fullName,
         email: m.email,
-        //college: m.college || null,
-        phone: m.phone,
-        type: m.type || null,
+        phone: Number(m.phone),
+        // college: m.college || "N/A",
+        type: m.type || "N/A",
       }));
     } else {
       body.name = formData.fullName;
       body.email = formData.email;
-      body.college = formData.college;
-      body.phone = formData.phone;
-      body.type = formData.type;
+      body.phone = Number(formData.phone);
+      body.college = formData.college || "N/A";
+      body.type = formData.type || "N/A";
     }
 
-    console.log("Request body:", body); // 👀 debug log
+    console.log("Create Order Body:", body);
 
     const res = await fetch("https://reg-page-backend.onrender.com/payments/create-order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
     });
-;
 
     const data = await res.json();
+    console.log("Create Order Response:", data);
+
     if (data.detail || data.error) {
       alert(data.detail || data.error);
       setLoading(false);
       return;
     }
 
-    // ✅ FREE coupon (single registration only)
+    // FREE coupon single registration
     if (!isGroup && data.free_coupon) {
       alert("Free registration successful 🎉");
-
-      await fetch("https://reg-page-backend.onrender.com/api/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          paymentId: "FREECOUPON",
-          paidAmount: 0,
-          tier: "FREE",
-        }),
-      });
-
-      alert("Registration Completed ✅");
       setLoading(false);
-      return;
+      return; // backend already handles DB & email
     }
 
-    // ✅ Paid flow
+    // Paid registration (single or group)
     if (data.display) setQuote(data.display);
 
     const options = {
       key: data.key,
-      amount: data.amount, // in paise
+      amount: data.amount,
       currency: "INR",
       name: "Conference 2025",
       description: isGroup ? "Group Registration" : "Conference Registration",
@@ -166,57 +159,57 @@ const handleMemberChange = (
         contact: formData.phone,
       },
       handler: async (response: any) => {
-        // 🔹 Build verification payload
-        let verifyBody: any;
-        if (isGroup) {
-          verifyBody = { ...response, group_members: groupMembers };
-        } else {
-          verifyBody = { ...response, ...formData };
-        }
-
-        const verifyRes = await fetch(
-          "https://reg-page-backend.onrender.com/payments/verify-payment",
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(verifyBody),
-          }
-        );
-
-        const verifyData = await verifyRes.json();
-        if (verifyRes.ok && verifyData.status === "success") {
-          alert("Payment successful 🎉");
-
-          // 🔹 Save to DB
+        try {
+          let verifyBody: any;
           if (isGroup) {
-            for (const m of groupMembers) {
-              await fetch("https://reg-page-backend.onrender.com/api/register", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                  ...m,
-                  paymentId: response.razorpay_payment_id,
-                  paidAmount: groupPricePerMember(groupMembers.length),
-                  tier: "Group",
-                }),
-              });
-            }
-            alert("All group members registered ✅");
+            verifyBody = {
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+              group_members: groupMembers.map((m) => ({
+                name: m.fullName,
+                email: m.email,
+                phone: Number(m.phone),
+                // college: m.college || "N/A",
+                type: m.type || "N/A",
+              })),
+            };
           } else {
-            await fetch("https://reg-page-backend.onrender.com/api/register", {
+            verifyBody = {
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+              name: formData.fullName,
+              email: formData.email,
+              phone: Number(formData.phone),
+              college: formData.college || "N/A",
+              type: formData.type || "N/A",
+            };
+          }
+
+          console.log("Verify Payment Body:", verifyBody);
+
+          const verifyRes = await fetch(
+            "https://reg-page-backend.onrender.com/payments/verify-payment",
+            {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                ...formData,
-                paymentId: response.razorpay_payment_id,
-                paidAmount: quote?.final_rupees,
-                tier: quote?.tier,
-              }),
-            });
-            alert("Registration Completed ✅");
+              body: JSON.stringify(verifyBody),
+            }
+          );
+
+          const verifyData = await verifyRes.json();
+          console.log("Verify Payment Response:", verifyData);
+
+          if (verifyRes.ok && verifyData.status === "success") {
+            alert("Payment successful 🎉");
+          } else {
+            alert("Payment verification failed ❌");
+            console.error("Verify Payment failed:", verifyData);
           }
-        } else {
-          alert("Payment verification failed ❌");
+        } catch (err) {
+          console.error("Error during payment verification:", err);
+          alert("Something went wrong during verification ❌");
         }
       },
       theme: { color: "#3399cc" },
@@ -224,12 +217,13 @@ const handleMemberChange = (
 
     const rzp = new (window as any).Razorpay(options);
     rzp.on("payment.failed", (resp: any) => {
-      console.error(resp);
+      console.error("Payment Failed:", resp);
       alert("Payment failed or cancelled.");
     });
     rzp.open();
   } catch (err) {
-    console.error(err);
+    console.error("Error in startPayment:", err);
+    alert("Something went wrong ❌");
   } finally {
     setLoading(false);
   }
