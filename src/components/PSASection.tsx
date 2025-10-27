@@ -48,7 +48,7 @@ const PSASection: React.FC = () => {
             {/* Right Content */}
             <div>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Poly Scientific Regenerative Intigrative Systems Medicine represents a paradigm shift in healthcare delivery. Rather than viewing different medical traditions as competing systems, PRISM creates a scientific framework where multiple approaches complement each other.
+                Poly Scientific Regenerative Integrative Systems Medicine represents a paradigm shift in healthcare delivery. Rather than viewing different medical traditions as competing systems, PRISM creates a scientific framework where multiple approaches complement each other.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
                 At its core, PRISM Medicine recognizes that{" "}

@@ -27,7 +27,7 @@ export default function Hero() {
             Two Traditions, One Science :<span className="block text-yellow-400">From PSA to PRISM: The New Paradigm</span>
           </h1> 
             
-            <p className="text-xl md:text-2xl text-gray-200 mb-3  max-w-4xl mx-auto">Training in Poly Scientific Regenerative Intigrative Systems Medicine (PRISM Medicine)</p><br />
+            <p className="text-xl md:text-2xl text-gray-200 mb-3  max-w-4xl mx-auto">Training in Poly Scientific Regenerative Integrative Systems Medicine (PRISM Medicine)</p><br />
             <h2 className="block text-3xl md:text-5xl font-bold text-yellow-400 mb-4 leading-tight">
               "Organized by Sai Ganga Panakeia (SGP) in collaboration with the National Integrated Medical Association (NIMA)"
             </h2><br></br>

@@ -51,7 +51,7 @@ const gains: Gain[] = [
     {
       icon: <GraduationCap className="w-8 h-8" />,
       title: "PRISM Course Launch",
-      description: "Be the first to witness India’s structured training pathways in 'Poly Scientific Regenerative Intigrative Systems Medicine'."
+      description: "Be the first to witness India’s structured training pathways in 'Poly Scientific Regenerative Integrative Systems Medicine'."
     },
     {
       icon: <Users2 className="w-8 h-8" />,
@@ -138,7 +138,7 @@ const gains: Gain[] = [
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                 <span>
-                  Witness the <span className="font-semibold text-yellow-500">launch of World’s first Institute of Poly Scientific Regenerative Intigrative Systems Medicine</span> — integrating Ayurveda, Allopathy, Naturopathy, Nutrition & Digital Health into one curriculum.
+                  Witness the <span className="font-semibold text-yellow-500">launch of World’s first Institute of Poly Scientific Regenerative Integrative Systems Medicine</span> — integrating Ayurveda, Allopathy, Naturopathy, Nutrition & Digital Health into one curriculum.
                 </span>
               </li>
               <li className="flex items-start gap-3">
