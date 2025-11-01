@@ -18,7 +18,7 @@ export default function Hero() {
           <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${bgimage})` }}
-      ></div>
+      ></div>   
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -29,7 +29,7 @@ export default function Hero() {
             
             <p className="text-xl md:text-2xl text-gray-200 mb-3  max-w-4xl mx-auto">Training in Poly Scientific Regenerative Integrative Systems Medicine (PRISM)</p><br />
             <h2 className="block text-3xl md:text-5xl font-bold text-yellow-400 mb-4 leading-tight">
-              "By Sai Ganga Panakeia (SGP) in collaboration with the IIT Hyderabad"
+              "By Sai Ganga Panakeia (SGP) in collaboration with IIT Hyderabad"
             </h2><br></br>
         
 
