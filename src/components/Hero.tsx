@@ -29,7 +29,7 @@ export default function Hero() {
             
             <p className="text-xl md:text-2xl text-gray-200 mb-3  max-w-4xl mx-auto">Training in Poly Scientific Regenerative Integrative Systems Medicine (PRISM)</p><br />
             <h2 className="block text-3xl md:text-5xl font-bold text-yellow-400 mb-4 leading-tight">
-              "By Sai Ganga Panakeia (SGP) in collaboration with the National Integrated Medical Association (NIMA)"
+              "By Sai Ganga Panakeia (SGP) in collaboration with the IIT Hyderabad"
             </h2><br></br>
         
 
