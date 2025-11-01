@@ -1,242 +1,96 @@
 import React from 'react';
-import { GraduationCap, Users2, Microscope, Briefcase, Brain } from 'lucide-react';
+import { Heart, Infinity, BrainCircuit, Sparkles } from 'lucide-react';
 
 export default function About() {
-  interface Gain {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}
-
-// Example gains data
-const gains: Gain[] = [
-  // {
-  //   icon: <GraduationCap className="w-8 h-8" />,
-  //   title: "CME Accreditation",
-  //   description: "CME accreditation and professional development."
-  // },
-  {
-    icon: <Microscope className="w-8 h-8" />,
-    title: "Regenerative Medicine",
-    description: "Learn advanced cell-based therapies and tissue regeneration techniques for clinical applications."
-  },
-  {
-    icon: <Brain className="w-8 h-8" />,
-    title: "AI & ML Framework for PRISM",
-    description: "Explore the application of Artificial Intelligence in precision and predictive medicine."
-  },
-  {
-    icon: <Microscope className="w-8 h-8" />,
-    title: "Integrative Medicine",
-    description: "Cutting-edge integrative medicine training."
-  },
-  {
-    icon: <Users2 className="w-8 h-8" />,
-    title: "Networking",
-    description: "Networking with leaders in multiple medical traditions."
-  },
-  {
-    icon: <Briefcase className="w-8 h-8" />,
-    title: "Business Opportunities",
-    description: "Franchise & business opportunities in Novadigm Clinics – SGP Hospitals."
-  },
-  {
-    icon: <GraduationCap className="w-8 h-8" />,
-    title: "Certification",
-    description: "Certificate of participation from prestigious organizations."
-  },
-];
-
-  const features = [
+  const philosophyPoints = [
     {
-      icon: <GraduationCap className="w-8 h-8" />,
-      title: "PRISM Course Launch",
-      description: "Be the first to witness India’s structured training pathways in 'Poly Scientific Regenerative Integrative Systems Medicine'."
+      icon: <Heart className="w-8 h-8" />,
+      title: "Vatha – The Resonance of Compassion",
+      description:
+        "Symbolizes the nurturing vibrational field of pure empathy — the emotional intelligence of healing.",
     },
     {
-      icon: <Users2 className="w-8 h-8" />,
-      title: "Expert Faculty & Collaborations",
-      description: "Learn from national leaders, academic experts and IIT Hyderabad collaborators."
+      icon: <Infinity className="w-8 h-8" />,
+      title: "Pitta – The Force of Alignment",
+      description:
+        "Represents focused devotion — the harmonizing intent that brings coherence between mind and matter.",
     },
     {
-      icon: <Microscope className="w-8 h-8" />,
-      title: "Clinical & Digital Innovations",
-      description: "From pulse diagnosis to digital health — see the future in action."
+      icon: <BrainCircuit className="w-8 h-8" />,
+      title: "Kapha – The Pulse of Regeneration",
+      description:
+        "Reflects the living oscillation that restores rhythm and cellular vitality through dynamic balance.",
     },
-    {
-      icon: <Briefcase className="w-8 h-8" />,
-      title: "Policy & Opportunities",
-      description: "Engage in policy discussions and explore business models with Novadigm Clinics – SGP Hospitals."
-    }
   ];
 
   return (
     <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
+      <div className="max-w-6xl mx-auto px-4">
+        {/* H1 – Our Story */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-            About the Conference
-          </h2>
-          <p className="text-xl text-gray-700 max-w-6xl mx-auto leading-relaxed">
-          <span className="font-semibold text-blue-900">Healthcare</span> is changing fast — and 
-          India is leading the way.  
-          The <span className="font-bold text-blue-900">National Conference on Poly Scientific Regenerative Integrative Systems Medicine (PRISM 2025) </span> 
-           isn’t just another CME, it’s a movement where 
-          <span className="font-semibold text-blue-900"> tradition meets technology</span> and ideas turn into action.  
-
-          Bringing together <span className="font-semibold text-blue-900">Ayurveda, Allopathy, Naturopathy, Nutrition </span> 
-          and <span className="font-semibold text-blue-900"> Digital Health</span>, this conference offers doctors, students, 
-          researchers, entrepreneurs and policymakers a chance to connect, learn and 
-          <span className="font-semibold text-blue-900"> shape the future of integrative healthcare</span>.  
-
-          This is more than a conference — it’s where <span className="font-semibold text-blue-900">careers accelerate, 
-          innovations launch</span> and <span className="font-semibold text-blue-900">India’s healthcare future</span> is written.
-        </p>
-
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
-            >
-              <div className="text-yellow-600 mb-4">
-                {feature.icon}
-              </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600">
-                {feature.description}
-              </p>
-            </div>
-          ))}
-        </div>
-
-      <div className="mt-16 bg-white rounded-2xl p-10 md:p-16 shadow-xl">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-            <span className="text-yellow-400">Who</span> should attend and <span className="text-yellow-400">Why?</span> 
-          </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            This conference bridges traditional wisdom with modern science, opening new
-            pathways for students, doctors, entrepreneurs and researchers in
-            integrative healthcare.
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+            Our Story
+          </h1>
+          <h3 className="text-2xl md:text-3xl font-semibold text-yellow-500 mb-8">
+            From Ayurvedic Homeostasis to Polyscientific Regeneration
+          </h3>
+          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+            <span className="font-semibold text-blue-900">i-PRISM</span> —{" "}
+            <span className="font-semibold text-blue-900">
+              Polyscientific Regenerative Integrative Systems Medicine
+            </span>{" "}
+            — emerged from decades of research bridging ancient homeostatic science with contemporary
+            regenerative biology. Founded under{" "}
+            <span className="font-semibold text-blue-900">Sai Ganga Panakeia (SGP)</span> by{" "}
+            <span className="font-semibold text-blue-900">Dr. Ravishankar Polisetty</span>, the
+            movement has evolved into a complete{" "}
+            <span className="font-semibold text-yellow-500">
+              academic + clinical + technological ecosystem
+            </span>{" "}
+            that now collaborates with{" "}
+            <span className="font-semibold text-blue-900">IIT Hyderabad</span>,{" "}
+            <span className="font-semibold text-blue-900">NIMA</span>,{" "}
+            <span className="font-semibold text-blue-900">VAP</span>, and{" "}
+            <span className="font-semibold text-blue-900">CCIM</span> to redefine systems medicine.
           </p>
         </div>
 
-        {/* Three Columns with Dividers */}
-        <div className="grid md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-200 gap-12">
-          {/* Column 1 - Students & Doctors */}
-          <div className="pr-1">
-            <h3 className="text-2xl font-bold text-blue-900 mb-6">
-              For <span className="text-yellow-400">Students & Doctors</span>
-            </h3>
-            <ul className="space-y-4 text-lg text-gray-700">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span>
-                  Witness the <span className="font-semibold text-yellow-500">launch of World’s first Institute of Poly Scientific Regenerative Integrative Systems Medicine</span> — integrating Ayurveda, Allopathy, Naturopathy, Nutrition & Digital Health into one curriculum.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span>
-                  Designed for <span className="font-semibold text-blue-900">BAMS, MBBS, BNYS, BHMS, PharmD students</span> who want to upskill and <span className="font-semibold text-yellow-500">experienced doctors</span> who aspire to teach and lead in integrative healthcare.
-                </span>
-              </li>
-            </ul>
+        {/* H2 – The Philosophy of 1 : 1 : 1 */}
+        <div className="bg-white rounded-2xl shadow-xl p-10 md:p-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
+              The Philosophy of <span className="text-yellow-400">1 : 1 : 1</span>
+            </h2>
+            <p className="mt-6 text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              The principle of <span className="font-semibold text-blue-900">Vatha–Pitta–Kapha</span>{" "}
+              explains the living resonance that maintains health at both the cellular and systemic
+              levels. When this triple balance — the{" "}
+              <span className="font-semibold text-yellow-500">1 : 1 : 1 ratio</span> — is disturbed,
+              disease appears; when restored, regeneration begins. This paradigm reframes pathology not
+              as damage control but as{" "}
+              <span className="font-semibold text-blue-900">
+                dynamic re-equilibration — the essence of i-PRISM’s regenerative logic.
+              </span>
+            </p>
           </div>
 
-          {/* Column 2 - Healthcare Entrepreneurs */}
-          <div className="px-3">
-            <h3 className="text-2xl font-bold text-blue-900 mb-6">
-              For <span className="text-yellow-400">Healthcare Entrepreneurs</span>
-            </h3>
-            <ul className="space-y-4 text-lg text-gray-700">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span>
-                  Explore <span className="font-semibold text-blue-900">PRISM Franchise Models</span> and opportunities to build scalable ventures in integrative medicine.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span>
-                  Connect with <span className="font-semibold text-yellow-500">investors, innovators and leaders</span> shaping the future of healthcare enterprises.
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3 - Researchers & Practitioners */}
-          <div className="pl-3">
-            <h3 className="text-2xl font-bold text-blue-900 mb-6">
-              For <span className="text-yellow-400">Researchers & Practitioners</span>
-            </h3>
-            <ul className="space-y-4 text-lg text-gray-700">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span>
-                  Learn directly from <span className="font-semibold text-blue-900">national faculty</span> and <span className="font-semibold text-yellow-500">IIT Hyderabad collaborators</span> bringing cutting-edge research into classrooms.
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span>
-                  Network with <span className="font-semibold text-blue-900">Ayurveda, Allopathy and Allied Health</span> practitioners driving integrative healthcare.
-                </span>
-              </li>
-            </ul>
-          </div>
-          {/* Column 4 - Ai & Ml Technocrats */}
-          <div className="px-3">
-            <h3 className="text-2xl font-bold text-blue-900 mb-6">
-              For <span className="text-yellow-400">Ai & Ml Technocrats</span>
-            </h3>
-            <ul className="space-y-4 text-lg text-gray-700">
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span>
-                  A New Era of  <span className="font-semibold text-blue-900">Preventive and Personalized Healthcare Through Technology</span> .
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span>
-                  Witness how our <span className="font-semibold text-yellow-500">AI-powered Ayurvedic</span> analysis transforms traditional diagnosis into modern, data-driven health insights.
-                </span>
-              </li>
-            </ul>
+          {/* Philosophy points */}
+          <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
+            {philosophyPoints.map((item, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 rounded-xl p-6 text-center shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="flex justify-center text-yellow-500 mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      {/* What You'll Gain Section */}
-<div className="mt-20 text-center">
-  <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-12">
-    What <span className="text-yellow-400">You’ll Gain</span>
-  </h2>
-  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-    {gains.map((gain, index) => (
-      <div
-        key={index}
-        className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
-      >
-        <div className="text-yellow-500 mb-4 flex justify-center">
-          {gain.icon}
-        </div>
-        <h3 className="text-lg font-bold text-blue-900 mb-2">
-          {gain.title}
-        </h3>
-        <p className="text-gray-600 text-sm">{gain.description}</p>
-      </div>
-    ))}
-  </div>
-</div>
-
-      </div>
-  </section>
+    </section>
   );
 }

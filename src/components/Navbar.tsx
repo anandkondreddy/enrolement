@@ -12,10 +12,7 @@ export default function Navbar({ isScrolled }: NavbarProps) {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Speakers', href: '#speakers' },
-    { name: 'Agenda', href: '#agenda' },
-    { name: 'Venue', href: '#venue' },
-    { name: 'Register', href: '#register' },
+    { name: 'Register', href: '#enroll' },
     { name: 'Contact', href: '#footer' },
     { name: 'Explore SGP', href: 'https://saigangapanakeia.in/' },
   ];
@@ -126,3 +123,4 @@ export default function Navbar({ isScrolled }: NavbarProps) {
     </nav>
   );
 }
+ 

@@ -4,7 +4,7 @@ import bgimage from '../assets/bgimage.jpeg';
 
 export default function Hero() {
   const scrollToRegister = () => {
-    const element = document.querySelector('#register');
+    const element = document.querySelector('#enroll');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -52,7 +52,7 @@ export default function Hero() {
             onClick={scrollToRegister}
             className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
           >
-            Register Now
+            Enroll Now
           </button>
         </div>
       </div>
