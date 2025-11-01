@@ -24,27 +24,27 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-4 leading-tight">
-            Two Traditions, One Science :<span className="block text-yellow-400">From PSA to PRISM: The New Paradigm</span>
+            Two Traditions, One Science :<span className="block text-yellow-400">The PRISM Paradigm</span>
           </h1> 
             
-            <p className="text-xl md:text-2xl text-gray-200 mb-3  max-w-4xl mx-auto">Training in Poly Scientific Regenerative Integrative Systems Medicine (PRISM Medicine)</p><br />
+            <p className="text-xl md:text-2xl text-gray-200 mb-3  max-w-4xl mx-auto">Training in Poly Scientific Regenerative Integrative Systems Medicine (PRISM)</p><br />
             <h2 className="block text-3xl md:text-5xl font-bold text-yellow-400 mb-4 leading-tight">
-              "Organized by Sai Ganga Panakeia (SGP) in collaboration with the National Integrated Medical Association (NIMA)"
+              "By Sai Ganga Panakeia (SGP) in collaboration with the National Integrated Medical Association (NIMA)"
             </h2><br></br>
         
 
           <div className="flex flex-wrap justify-center gap-6 mb-12 text-white">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Calendar className="w-5 h-5 text-yellow-400" />
-              <span className="font-medium">Coming this October</span>
+              <span className="font-medium">Basic Course</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Users className="w-5 h-5 text-yellow-400" />
-              <span className="font-medium">Senior Professionals</span>
+              <span className="font-medium">Advanced Course</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <MapPin className="w-5 h-5 text-yellow-400" />
-              <span className="font-medium">Academic Excellence</span>
+              <span className="font-medium">Franchise</span>
             </div>
           </div>
 

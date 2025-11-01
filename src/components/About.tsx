@@ -50,7 +50,7 @@ export default function About() {
             that now collaborates with{" "}
             <span className="font-semibold text-blue-900">IIT Hyderabad</span>,{" "}
             <span className="font-semibold text-blue-900">NIMA</span>,{" "}
-            <span className="font-semibold text-blue-900">VAP</span>, and{" "}
+            <span className="font-semibold text-blue-900">VAP</span> and{" "}
             <span className="font-semibold text-blue-900">CCIM</span> to redefine systems medicine.
           </p>
         </div>

@@ -14,11 +14,11 @@ const highlights = [
     title: "The Journey from Lab to Life",
     description: (
       <ul className="list-disc list-inside text-gray-700 text-base space-y-2 leading-relaxed">
-        <li>Early Bench Work: experimental models in cardiac, renal, hepatic, pancreatic, and dermal regeneration.</li>
+        <li>Early Bench Work: experimental models in cardiac, renal, hepatic, pancreatic and dermal regeneration.</li>
         <li>Bedside Translation: refinement into bedside clinical methodology for end-stage disease management.</li>
         <li>Systems Integration: AI-enabled pulse diagnostics via Docture-Poly™ and VPK-42.</li>
         <li>Educational Expansion: co-branded certifications with IIT Hyderabad and IPSA Academy.</li>
-        <li>Global Network: partnerships across India, Europe, and the US under NIMA–VAP–CCIM initiatives.</li>
+        <li>Global Network: partnerships across India, Europe and the US under NIMA–VAP–CCIM initiatives.</li>
       </ul>
     ),
   },
@@ -63,7 +63,7 @@ const highlights = [
     title: "Our Vision",
     description: (
       <p className="text-gray-700 text-base leading-relaxed text-center">
-        To make regeneration not an exception, but a standard of care—uniting Ayurveda, quantum biophysics, and systems biology into a measurable science of healing.
+        To make regeneration not an exception, but a standard of care—uniting Ayurveda, quantum biophysics and systems biology into a measurable science of healing.
       </p>
     ),
   },
